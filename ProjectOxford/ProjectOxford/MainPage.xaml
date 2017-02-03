@@ -4,44 +4,46 @@
              xmlns:local="clr-namespace:ProjectOxford"
              x:Class="ProjectOxford.MainPage">
 
-  <StackLayout Orientation="Vertical">
-    <Button x:Name="TakePictureButton" Clicked="TakePictureButton_Clicked"
+  <StackLayout Orientation="Vertical" BackgroundColor="#403250">
+    <Button x:Name="TakePictureButton" BackgroundColor="#e14659" Clicked="TakePictureButton_Clicked"
             Text="Take from camera"/>
-    <Button x:Name="UploadPictureButton" Clicked="UploadPictureButton_Clicked"
+    <Button x:Name="UploadPictureButton" BackgroundColor="#e14659" Clicked="UploadPictureButton_Clicked"
         Text="Pick a photo"/>
 
     <ActivityIndicator x:Name="Indicator1" IsVisible="False" IsRunning="False" />
     <Image x:Name="Image1" HeightRequest="240"/>
     <StackLayout Orientation="Horizontal" Padding="3">
-      <Label Text="Gender: "/>
-      <Label x:Name="GenderLabel" Text="{Binding Path=Gender}" />
+      <Label Text="Gender: " TextColor="#C0B3A0" />
+      <Label x:Name="GenderLabel" Text="{Binding Path=Gender}" TextColor="#C0B3A0"/>
     </StackLayout>
     <StackLayout Orientation="Horizontal" Padding="3">
-      <Label Text="Age: "/>
-      <Label x:Name="AgeLabel" Text="{Binding Path=Age}"/>
+      <Label Text="Age: " TextColor="#C0B3A0" />
+      <Label x:Name="AgeLabel" Text="{Binding Path=Age}" TextColor="#C0B3A0"/>
     </StackLayout>
     <StackLayout Orientation="Horizontal" Padding="3">
-      <Label Text="Emotion: "/>
-      <Label x:Name="EmotionLabel" Text="{Binding Path=Emotion}"/>
+      <Label Text="Emotion: " TextColor="#C0B3A0"/>
+      <Label x:Name="EmotionLabel" Text="{Binding Path=Emotion}" TextColor="#C0B3A0"/>
     </StackLayout>
     <StackLayout Orientation="Horizontal" Padding="3">
-      <Label Text="Smile: "/>
+      <Label Text="Smile: " TextColor="#C0B3A0"/>
       <!--<Label x:Name="SmileLabel"
              Text="{Binding Smile, Converter={StaticResource SmileConverter}}"/>-->
+    <Label x:Name="SmileLabel"
+             Text="{Binding Path=Smile}" TextColor="#C0B3A0"/>
     </StackLayout>
     <StackLayout Orientation="Horizontal" Padding="3">
-      <Label Text="Glasses: "/>
-      <Label x:Name="GlassesLabel" Text="{Binding Path=Glasses}"/>
+      <Label Text="Glasses: " TextColor="#C0B3A0"/>
+      <Label x:Name="GlassesLabel" Text="{Binding Path=Glasses}" TextColor="#C0B3A0"/>
     </StackLayout>
     <StackLayout Orientation="Horizontal" Padding="3">
-      <Label Text="Beard: "/>
+      <Label Text="Beard: " TextColor="#C0B3A0"/>
       <Label x:Name="BeardLabel"
-             Text="{Binding Path=Beard}"/>
+             Text="{Binding Path=Beard}" TextColor="#C0B3A0"/>
     </StackLayout>
     <StackLayout Orientation="Horizontal" Padding="3">
-      <Label Text="Moustache: "/>
+      <Label Text="Moustache: " TextColor="#C0B3A0"/>
       <Label x:Name="MoustacheLabel"
-             Text="{Binding Path=Moustache}"/>
+             Text="{Binding Path=Moustache}" TextColor="#C0B3A0"/>
     </StackLayout>
   </StackLayout>
 
