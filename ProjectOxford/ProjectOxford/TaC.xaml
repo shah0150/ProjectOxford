@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectOxford.TaC">
+  <StackLayout Orientation="Vertical" BackgroundColor="#403250" Padding="0,250,0,0">
+  
+    <Label  VerticalOptions="Center" Text="P.S. We don’t keep the photo" HorizontalOptions="Center" TextColor="#C0B3A0" />
+
+    <Button x:Name="TakePictureButton" BackgroundColor="#e14659" Text="Awesome! Start App" Clicked="tacbutton"/>
+  </StackLayout>
+</ContentPage>

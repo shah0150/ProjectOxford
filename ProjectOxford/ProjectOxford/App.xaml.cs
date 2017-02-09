@@ -13,7 +13,7 @@ namespace ProjectOxford
         {
             InitializeComponent();
 
-            MainPage = new ProjectOxford.MainPage();
+            MainPage = new ProjectOxford.TaC();
         }
 
         protected override void OnStart()
